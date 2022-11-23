@@ -1,0 +1,191 @@
+/*TODO
+- kropki przy językach i umiejętnościach wyrównać do boków
+- jakieś inne z w3schools
+- pl - en https://stackoverflow.com/questions/46008760/how-to-build-multiple-language-website-using-pure-html-js-jquery
+- kiepska responsywność
+- wyrównać u góry kolumny
+- myślnik pod karuzelą
+*/
+
+body {
+    background-color: #DFCFBE;
+    font-family: "open sans",sans-serif;
+    display: flex;
+    flex-direction: row;
+    color: #4f4f4f;
+}
+
+#column_1 {
+    background-color: #f5eaf5;
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    overflow: auto;
+    border-radius: 1vw; 
+    border: 0.5vw solid #836953;
+}
+
+#column_2 {
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+}
+
+.accordion {
+    background-color: #DCC7AA;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border-radius: 1vw;
+    border: 0.3vw solid #836953;
+    outline: none;
+    transition: 0.4s;
+    font-weight: bold;
+    font-size: 1.4vw;
+  }
+  
+.active_tab, .accordion:hover {
+    background-color: #f5eaf5;
+  }
+  
+.accordion:after {
+    content: '\002B';
+    color: #4f4f4f;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+.active:after {
+    content: "\2212";
+  }
+  
+.panel {
+    padding: 0 18px;
+    background-color: #DFCFBE;
+    display: none;
+    overflow: hidden;
+    font-size: 1.2vw;
+  }
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.dates {
+    width: 30%;
+    height: 100%;
+}
+
+.info {
+    width: 70%;
+    height: 100%;
+}
+
+p.header {
+    color: gray;
+}
+
+h1 {
+    font-size: 4vw;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+p.personal {
+    font-size: 1.2vw;
+}
+
+#prof {
+    max-width: 100%;
+    width: 20vw;
+    height: auto;
+    border-radius: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:visited {
+    color: #987456;
+    ;
+}
+
+a {
+    color: #4f4f4f; 
+}
+
+#mySidenav a {
+    position: absolute;
+    left: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  #mySidenav a:hover {
+    left: 0;
+  }
+  
+  #E-mail {
+    top: 20px;
+    background-color: #ba8759;
+  }
+  
+  #Github {
+    top: 80px;
+    background-color: #a0785a;
+  }
+  
+  #Fb {
+    top: 140px;
+    background-color: #987456;
+  }
+
+  #prof:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #e7c22c;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }  
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.carousel-inner {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
