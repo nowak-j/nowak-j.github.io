@@ -1,2 +1,2 @@
 # nowak-j.github.io
-An online CV.
+My first website in the form of a CV, aiming to build on the skills I learnt during the **web development** course.
