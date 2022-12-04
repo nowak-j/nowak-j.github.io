@@ -1,9 +1,5 @@
-/*TODO
-- pl - en https://stackoverflow.com/questions/46008760/how-to-build-multiple-language-website-using-pure-html-js-jquery
-- kiepska responsywność, czcionka lewej kolumny
-- zmienić kolory
-- zmienić jednostki
-- sidenav nie działa
+/* TODO
+- https://stackoverflow.com/questions/46008760/how-to-build-multiple-language-website-using-pure-html-js-jquery
 */
 
 body {
@@ -15,11 +11,11 @@ body {
 }
 
 #column_1 {
-    background-color: #f0ece2; /* or #ede7cf */
+    background-color: #ece0d3;
     width: 30%;
     height: 100%;
     padding: 1.2vw;
-    overflow: auto;
+    column-fill: balance;
     border-radius: 1vw; 
     border: 0.5vw solid #836953;
 }
@@ -46,7 +42,7 @@ body {
   }
   
 .active_tab, .accordion:hover {
-    background-color: #f0ece2;
+    background-color: #ece0d3;
   }
   
 .accordion:after {
@@ -90,12 +86,12 @@ p.header {
 }
 
 h1 {
-    font-size: 4vw;
+    font-size: 5vw !important;
     text-align: center;
 }
 
 h2 {
-    font-size: 2vw;
+    font-size: 3vw !important;
 }
 
 p.personal {
@@ -123,14 +119,15 @@ a {
 
 #mySidenav a {
     position: absolute;
-    left: -100px;
+    left: -12vw;
     transition: 0.3s;
-    padding: 15px;
-    width: 100px;
+    padding: 1.5vw;
+    width: 12vw;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.4vw;
     color: white;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 0.6vw 0/6vw 0;
+    box-sizing: content-box;
   }
   
   #mySidenav a:hover {
@@ -138,17 +135,17 @@ a {
   }
   
   #E-mail {
-    top: 20px;
+    top: 2.4vw;
     background-color: #ba8759;
   }
   
   #Github {
-    top: 80px;
+    top: 9.6vw;
     background-color: #a0785a;
   }
   
   #Fb {
-    top: 140px;
+    top: 16.8vw;
     background-color: #987456;
   }
 
@@ -162,11 +159,11 @@ a {
     left: 50%;
     top: 50%;
     z-index: 1;
-    border: 16px solid #f3f3f3;
+    border: 1.6vw solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #e7c22c;
-    width: 120px;
-    height: 120px;
+    border-top: 1.6vw solid #e7c22c;
+    width: 14.4vw;
+    height: 14.4vw;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
   }
@@ -201,4 +198,8 @@ a {
 
 .carousel-item.active::after {
   display: none;
+}
+
+.carousel-caption h5 {
+  font-size: 3vw;
 }
