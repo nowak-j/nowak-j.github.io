@@ -2,181 +2,184 @@
 - pl - en https://stackoverflow.com/questions/46008760/how-to-build-multiple-language-website-using-pure-html-js-jquery */
 
 body {
-    background-color: #DFCFBE;
-    /* font-family: "open sans",sans-serif; */
-    display: flex;
-    flex-direction: row;
-    color: #4f4f4f;
-    font-family: "Raleway", sans-serif !important;
+  background-color: #DFCFBE;
+  display: flex;
+  flex-direction: row;
+  color: #313130;
+  font-family: "Raleway", sans-serif !important;
 }
 
 #column_1 {
-    background-color: #ece0d3;
-    width: 30%;
-    height: 100%;
-    padding: 1.2vw;
-    column-fill: balance;
-    border-radius: 1vw; 
-    border: 0.5vw solid #836953;
+  background-color: #ece0d3;
+  width: 30%;
+  height: 100%;
+  padding: 1.2vw;
+  column-fill: balance;
+  border-radius: 1vw; 
+  border: 0.5vw solid #836953;
 }
 
 #column_2 {
-    width: 70%;
-    height: 100%;
-    padding: 1.2vw;
+  width: 70%;
+  height: 100%;
+  padding: 1.2vw;
 }
 
 .accordion {
-    background-color: #DCC7AA;
-    color: #444;
-    cursor: pointer;
-    padding: 1.5vw;
-    width: 100%;
-    text-align: left;
-    border-radius: 1vw;
-    border: 0.3vw solid #836953;
-    outline: none;
-    transition: 0.4s;
-    font-weight: bold;
-    font-size: 1.4vw;
+  background-color: #DCC7AA;
+  color: #444;
+  cursor: pointer;
+  padding: 1.5vw;
+  width: 100%;
+  text-align: left;
+  border-radius: 1vw;
+  border: 0.3vw solid #836953;
+  outline: none;
+  transition: 0.4s;
+  font-weight: bold;
+  font-size: 1.4vw;
   }
   
 .active_tab, .accordion:hover {
-    background-color: #ece0d3;
+  background-color: #ece0d3;
   }
   
 .accordion:after {
-    content: '\002B';
-    color: #4f4f4f;
-    font-weight: bold;
-    float: right;
-    margin-left: 0.6vw;
+  content: '\002B';
+  color: #1E1E1D;
+  font-weight: bold;
+  float: right;
+  margin-left: 0.6vw;
   }
   
 .active:after {
-    content: "\2212";
+  content: "\2212";
   }
   
 .panel {
-    padding: 1.2vw 1.5vw;
-    background-color: #DFCFBE;
-    display: none;
-    overflow: hidden;
-    font-size: 1.2vw;
-    border-radius: 1vw;
-  }
+  padding: 1.2vw 1.5vw;
+  background-color: #DFCFBE;
+  display: none;
+  overflow: hidden;
+  font-size: 1.2vw;
+  border-radius: 1vw;
+}
 
 .content {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .dates {
-    width: 30%;
-    height: 100%;
+  width: 30%;
+  height: 100%;
 }
 
 .info {
-    width: 70%;
-    height: 100%;
+  width: 70%;
+  height: 100%;
 }
 
 p.header {
-    color: gray;
+  color: gray;
 }
 
 h1 {
-    font-size: 5vw !important;
-    text-align: center;
+  font-size: 5vw !important;
+  text-align: center;
 }
 
 h2 {
-    font-size: 3vw !important;
+  font-size: 3vw ;
 }
 
 p.personal {
-    font-size: 1.2vw;
+  font-size: 1.2vw;
 }
 
 #prof {
-    max-width: 100%;
-    width: 20vw;
-    height: auto;
-    border-radius: 30%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 100%;
+  width: 20vw;
+  height: auto;
+  border-radius: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a:visited {
-    color: #987456;
-    ;
+  color: #1E1E1D; 
 }
 
 a {
-    color: #4f4f4f; 
+  color: #987456;
+  overflow-wrap: break-word;
+}
+
+a:hover {
+  font-weight: bold;
 }
 
 #mySidenav a {
-    position: absolute;
-    left: -12vw;
-    transition: 0.3s;
-    padding: 1.5vw;
-    width: 12vw;
-    text-decoration: none;
-    font-size: 1.4vw;
-    color: white;
-    border-radius: 0 0.6vw 0/6vw 0;
-    box-sizing: content-box;
-  }
+  position: absolute;
+  left: -12vw;
+  transition: 0.3s;
+  padding: 1.5vw;
+  width: 12vw;
+  text-decoration: none;
+  font-size: 1.4vw;
+  color: white;
+  border-radius: 0 0.6vw 0/6vw 0;
+  box-sizing: content-box;
+}
   
-  #mySidenav a:hover {
-    left: 0;
-  }
-  
-  #E-mail {
-    top: 2.4vw;
-    background-color: #ba8759;
-  }
-  
-  #Github {
-    top: 9.6vw;
-    background-color: #a0785a;
-  }
-  
-  #Fb {
-    top: 16.8vw;
-    background-color: #987456;
-  }
+#mySidenav a:hover {
+  left: 0;
+}
 
-  #prof:hover {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
+#E-mail {
+  top: 2.4vw;
+  background-color: #ba8759;
+}
 
-  #loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    border: 1.6vw solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 1.6vw solid #e7c22c;
-    width: 14.4vw;
-    height: 14.4vw;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-  }
+#Github {
+  top: 9.6vw;
+  background-color: #a0785a;
+}
+
+#Fb {
+  top: 16.8vw;
+  background-color: #987456;
+}
+
+#prof:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  border: 1.6vw solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 1.6vw solid #e7c22c;
+  width: 14.4vw;
+  height: 14.4vw;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
   
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }  
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}  
 
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 .carousel-inner {
   max-width: 80%;
@@ -189,7 +192,11 @@ a {
 .skillPoints {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between !important;
+}
+
+.skill p {
+  font-size: 1.2vw;
 }
 
 .points {
@@ -201,5 +208,17 @@ a {
 }
 
 .carousel-caption h5 {
-  font-size: 3vw;
+  font-size: 2.5vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  #column_1 {width: 40%}
+  .accordion {font-size: 3vw;}
+  .panel {font-size: 2.8vw;}
+  h1 {font-size: 6vw;}
+  h2 {font-size: 4vw;}
+  h1 + h2 {text-align: center;}
+  .personal {font-size: 2.8vw !important;}
+  .skill p {font-size: 2.8vw;} 
+  .points {font-size: 2.8vw;}
 }
