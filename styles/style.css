@@ -3,10 +3,11 @@
 
 body {
     background-color: #DFCFBE;
-    font-family: "open sans",sans-serif;
+    /* font-family: "open sans",sans-serif; */
     display: flex;
     flex-direction: row;
     color: #4f4f4f;
+    font-family: "Raleway", sans-serif !important;
 }
 
 #column_1 {
